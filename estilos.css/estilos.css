@@ -1,9 +1,14 @@
+
+.b{
+    background: rgba(255, 187, 0, 0.973); 
+    height: 40px;
+}
 h1{
-    background: red;
+    background: rgba(255, 187, 0, 0.973);
     text-align: center;
 }
 li{
-    background: red;
+    background: rgba(255, 187, 0, 0.973);
     width: 100%;
     margin-top: 1%;
     height: 40px;
@@ -18,9 +23,8 @@ li a {
 li:hover {
 background-color: aliceblue;
 }
-.pie
-{
-    background-color: red;
+.pie{
+    background-color: rgba(255, 187, 0, 0.973);
     text-align: center;
     margin-top: 1%;
     width: 100%;
@@ -33,9 +37,12 @@ background-color: aliceblue;
 .contenido{
     width: 78%;
     float: right;
+    background: url(../imagenes/f.jpg);
+    height: 500px;
 }
 .i{
     width: 54%;
+    margin-top: 4%;
 }
 .t{
     width: 30%;
@@ -45,6 +52,76 @@ background-color: aliceblue;
     margin: 5%;
 }
 .ejer{
-    width: 54%; 
+    width: 50%; 
     font-size: 30px;
+    float: left;
+    text-align: center;
+    background: url(../imagenes/f.jpg) no-repeat;
+}
+.te{
+    width: 30%;
+    float: left;
+    margin-left: 35%;
+}
+.t{
+    width: 30%;
+    float: right;
+}
+.boton {
+    background: rgba(255, 187, 0, 0.973);
+    float: center;
+    margin: 1%;
+    width: 30%;
+    height: 30px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    height: 80px;
+    font-size: 30px;
+}
+.boton:hover{
+    background: rgba(255, 0, 0, 0.555);
+    
+}
+#pantalla{
+    margin-top: 5%;
+    background: gray;
+    margin-bottom:3%;
+    width: 30%;
+    height: 60px;
+    margin-left: 35%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 30px;
+}
+#numero1{
+    background: beige;
+    margin-bottom:3%;
+    width: 13%;
+    height: 50px;
+    margin-left: 35%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 30px;
+}
+#numero2{
+    background: beige;
+    margin-bottom:3%;
+    width: 13%;
+    height: 50px;
+    margin-left: 3%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 30px;
+}
+@media only screen and (max-width:700px){
+    .menu, .ejer, .contenido{
+     width: 100%;
+    }
+    .t{
+        width: 100%;
+        margin: 0%;
+    }
+    .pie{
+        width: 100%;
+       margin-top: 19%;
+    }
 }

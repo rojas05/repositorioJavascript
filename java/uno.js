@@ -84,9 +84,9 @@ function calculo () {
         if (numero==0)
         document.getElementById('snum').value="neutro"
         else if (numero<0)
-        document.getElementById('snum').value="neutro"
+        document.getElementById('snum').value="negativo"
         else
-        document.getElementById('snum').value="neutro"
+        document.getElementById('snum').value="positivo"
     }
     function votar (){
         var name=(document.getElementById('name').value)
@@ -121,3 +121,49 @@ function calculo () {
         var r=un/doss
         document.getElementById('divi').value=r
     }
+    function suma (){
+        var n1=Number(document.getElementById('numero1').value) 
+        var n2=Number(document.getElementById('numero2').value) 
+        var res=n1+n2;
+        document.getElementById('pantalla').value=res;
+    }
+    function resta (){
+        var n1=Number(document.getElementById('numero1').value) 
+        var n2=Number(document.getElementById('numero2').value) 
+        var res=n1-n2;
+        document.getElementById('pantalla').value=res;
+    }
+    function divicion(){
+        var n1=Number(document.getElementById('numero1').value) 
+        var n2=Number(document.getElementById('numero2').value) 
+        if (n1==0){
+            document.getElementById('pantalla').value='la operacion no es posible';
+        }else if (n2==0){
+            document.getElementById('pantalla').value='la operacion no es posible';
+        }else{
+        var res=n1/n2
+        document.getElementById('pantalla').value=res}
+        }
+    function multiplicacion (){
+        var n1=Number(document.getElementById('numero1').value) 
+        var n2=Number(document.getElementById('numero2').value) 
+        var res=n1*n2;
+        document.getElementById('pantalla').value=res;
+    } 
+    function promedio (){
+        var n1=Number(document.getElementById('numero1').value) 
+        var n2=Number(document.getElementById('numero2').value) 
+        var res=(n1+n2)/2
+        document.getElementById('pantalla').value=res;
+    }  
+    function raiz (){
+        var n1=Number(document.getElementById('numero1').value)
+        var res=Number(Math.sqrt(n1))
+        if (n1<0){
+        document.getElementById('pantalla').value="la operacion no es posible";
+        }else{
+            var res=(Math.sqrt(n1)) 
+            document.getElementById('pantalla').value=res;  
+        }
+        alert('el proceso se hace con el numero del primer campo')
+    } 
